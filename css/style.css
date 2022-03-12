@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(240,255,255,1) 0%, rgba(240,255,255,1) 0%, rgba(0,212,255,1) 100%);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.todo-list__add-wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 40px;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+.todo-list__input-field {
+  width: 90%;
+}
+.todo-list__input-field input {
+  height: 25px;
+}
+.todo-list__btn-delete {
+  margin: 0 15px;
+}
+.todo-list__item {
+  border: 1px solid;
+  border-image: linear-gradient(20deg, #f92056 38%, #26a69a 65%);
+  border-image-slice: 1;
+  display: flex;
+  width: 500px;
+  margin: 15px 0;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.todo-list__item-description {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.todo-list__item-btns {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.todo-list__item-label {
+  margin-top: 8px;
+}
+.todo-list__item.checked {
+  background: rgba(206, 206, 206, 0.849);
+  opacity: 0.5;
+}
+.todoItemElems.delition {
+  animation: opacity 5s ease-in-out;
+}
+.todo-list__list-wrapper {
+  margin: 0 15px;
+}
+@media (max-width: 600px) {
+  .todo-list__item {
+    width: 435px;
+  }
+  .todo-list__item-description {
+    font-size: 14px;
+  }
+}
+@media (max-width: 470px) {
+  .todo-list__item {
+    max-width: 370px;
+  }
+}
+@media (max-width: 400px) {
+  h2 {
+    font-size: 23px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .todo-list__item-description {
+    font-size: 12px;
+    width: 65%;
+  }
+  .todo-list__item {
+    max-width: 320px;
+  }
+}
+@media (max-width: 320px) {
+  .todo-list__item {
+    max-width: 300px;
+  }
+  .todo-list__item-description {
+    width: 62%;
+  }
+}
