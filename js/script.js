@@ -76,7 +76,7 @@ const deleteTask = (index) => {
 };
 
 addTaskBtn.addEventListener('click', () => {
-  tasks.push(new Task(taskInput.value));
+  tasks.unshift(new Task(taskInput.value));
   updateLocal();
   addHtmlTasksList();
   taskInput.value = '';
